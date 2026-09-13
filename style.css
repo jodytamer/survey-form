@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 16px;
+  background: #0f1720;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1c2530;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: #f7f5ef;
+  border-radius: 10px;
+  padding: 36px 40px 44px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.card-head {
+  margin-bottom: 28px;
+  border-bottom: 2px solid #1c2530;
+  padding-bottom: 20px;
+}
+
+#title {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1c2530;
+}
+
+#description {
+  margin: 0;
+  color: #4a5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.field {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1c2530;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #c9c3b6;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #ffffff;
+  color: #1c2530;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #3b7a7a;
+  outline-offset: 1px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid #c9c3b6;
+  border-radius: 6px;
+  padding: 16px 16px 12px;
+  margin: 0 0 22px;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+fieldset input {
+  margin: 0;
+}
+
+#submit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #3b7a7a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #2f6363;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 28px 22px 34px;
+  }
+}
